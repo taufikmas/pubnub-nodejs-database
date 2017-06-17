@@ -3,11 +3,13 @@ save realtime data pubnub to database --fixed
 
 
 
-this file according to pubnub with javascript, https://github.com/pubnub/javascript/tree/master_3x 1.need setup pubnub key subkey : demo-36 pubkey : demo-36 channel: demo-361
-
+this file according to pubnub with javascript, https://github.com/pubnub/javascript/tree/master_3x 
 i wanna store the data from pubnub to database mysql or mongodb.
 
-    make db on mysql with xampp
+
+1.need setup pubnub key subkey : demo-36 pubkey : demo-36 channel: demo-361
+
+2. make db on mysql with xampp
 
 -- -- Database: pbss
 -- -- Table structure for table inboxpub
@@ -20,15 +22,13 @@ if you will store to mongodb, with database 'pbss' collection 'inboxpub'
 
 4.run "node filename.js" in terminal ex. for sql 
 
-PS C:\nodejs\javascript-master_3x> node .\subscribe_wildcard_fix_sql.js
+    PS C:\nodejs\javascript-master_3x> node .\subscribe_wildcard_fix_sql.js
 
 
 
-
-
-for mongodb 
+      for mongodb 
 database: pbss
 collection: tb_client, tb_inboxpub
 
 
-PS C:\nodejs\javascript-master_3x> node .\subscribe_wildcard_fix_mongo.js
+    PS C:\nodejs\javascript-master_3x> node .\subscribe_wildcard_fix_mongo.js
